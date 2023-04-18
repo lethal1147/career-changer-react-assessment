@@ -1,0 +1,27 @@
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 20rem;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-bottom: 2px solid rgba(255, 255, 255,0.2);
+    background-color: rgba(0, 116, 185,80%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #56c1ff;
+    transition: all linear 0.1s;
+}
