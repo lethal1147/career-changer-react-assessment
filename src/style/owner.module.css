@@ -18,6 +18,11 @@
     margin-bottom: 0.5rem;
 }
 
+.owner img:hover {
+    transform: rotate(360deg);
+    transition: all 2.5s 0.05s;
+}
+
 .owner h3 {
     font-size: 1.8rem;
 }

@@ -55,10 +55,14 @@ const Home = () => {
   const handleSave = () => {
     if (inputs.name === '' || inputs.lastname === '' || inputs.position === '') {
       return alert('Invalid Input!')
-      //TODO: clear input field
     }
-
     setEmployees(prevEmployee => [...prevEmployee, inputs])
+    setInputs({
+      name: '',
+      lastname: '',
+      position: '',
+      id: 0
+    })
   }
   
   // What content to show base on sector state
