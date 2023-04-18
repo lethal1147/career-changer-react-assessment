@@ -30,7 +30,7 @@ export default function Admin({employees, onChange, onSave, onDelete, inputs}) {
                                 <td>{employee.name}</td>
                                 <td>{employee.lastname}</td>
                                 <td>{employee.position}</td>
-                                <td><a onClick={() => onDelete(employee.id)}>Delete</a></td>
+                                <td><button onClick={() => onDelete(employee.id)}>Delete</button></td>
                             </tr>
                         )
                     })}

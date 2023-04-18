@@ -23,5 +23,6 @@ a {
 
 a:hover {
     color: #56c1ff;
-    transition: all linear 0.1s;
+    transform: scale(1.2);
+    transition: all linear 0.2s;
 }

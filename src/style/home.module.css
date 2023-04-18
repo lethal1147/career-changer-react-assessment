@@ -29,9 +29,8 @@ button {
 button:active,
 button:hover,
 button:focus {
-    background-color: #56c1ff;
+    background-color: #065888;
     transition: all linear 0.15s;
-    outline: 2px solid #c5ebff
 }
 
 .home h1 {
@@ -49,6 +48,7 @@ button:focus {
 .content form {
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .content form input {
@@ -59,7 +59,9 @@ button:focus {
 }
 
 .content form input:focus {
-    outline: 2px solid #c5ebff
+    outline: 2px solid #065888;
+    flex-grow: 1;
+    transition: all linear 0.25s;
 }
 
 .content form button {
@@ -71,9 +73,8 @@ button:focus {
 .content form button:hover,
 .content form button:active,
 .content form button:focus {
-    background-color: #56c1ff;
+    background-color: #065888;
     transition: all linear 0.15s;
-    outline: 2px solid #c5ebff
 }
 
 .content table,th,tr,td {
@@ -88,7 +89,6 @@ th {
 
 td {
     padding: 0.5rem 1rem;
-    /* text-align: center; */
     background-color: #4096c7;
 }
 
@@ -96,13 +96,15 @@ table td:last-child {
     text-align: center;
 }
 
-table a {
-    color: rgb(254, 57, 57);
+table button {
+    background-color: rgb(254, 57, 57);
+    padding: 0.5rem 2rem;
     font-weight: 700;
     cursor: pointer;
 }
 
-table a:hover {
-    color: red;
+table button:hover {
+    background-color: red;
+    color: white;
     transition: all linear 0.1s;
 }

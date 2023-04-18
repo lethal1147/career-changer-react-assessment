@@ -35,7 +35,9 @@ const Home = () => {
     position: '',
     id: 0
   })
-  useEffect(() => setEmployees(mockEmployees),[])
+  useEffect(() => {
+    setEmployees(mockEmployees)
+  },[])
   // Delete function
   const handleDelete = (id) => {
     const newEmployees = employees.filter(employee => employee.id !== id)
@@ -53,6 +55,7 @@ const Home = () => {
   const handleSave = () => {
     if (inputs.name === '' || inputs.lastname === '' || inputs.position === '') {
       return alert('Invalid Input!')
+      //TODO: clear input field
     }
 
     setEmployees(prevEmployee => [...prevEmployee, inputs])
@@ -64,7 +67,7 @@ const Home = () => {
   return (
     <Layout>
       <div className={styles.home}>
-          <h1>Generation Thailand React - Assessment</h1>
+          <h1>Generation Thailand <br/> React - Assessment</h1>
           <div className={styles.btnContainer}>
             <button onClick={() => setSector('user')}>User Home Sector</button>
             <button onClick={() => setSector('admin')}>Admin Home Sector</button>
